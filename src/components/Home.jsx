@@ -1,7 +1,8 @@
 import React from 'react'
 
-export const Home = () => {
+const Home = () => {
   return (
-    <div>Home</div>
+    <div className='flex h-[100vh] fllex-col'>Home</div>
   )
 }
+export default Home

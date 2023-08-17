@@ -3,7 +3,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="w-full p-3 text-xs text-gray-400 bg-[#171717] divide-y divide-gray-500">
+    <footer className="w-full p-3 text-xs text-gray-400 bg-[#171717] divide-y divide-gray-500 fixed bottom-0">
       <div className="items-center mb-4">Indonesia</div>
       <div className="items-center mb-4">
         <div className="flex justify-between gap-4 mt-4">

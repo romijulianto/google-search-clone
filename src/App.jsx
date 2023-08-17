@@ -5,13 +5,15 @@ import { NextUIProvider } from "@nextui-org/react";
 function App() {
   return (
     <NextUIProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+      <main className="dark text-foreground bg-background">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      </main>
     </NextUIProvider>
-  )
+  );
 }
 
-export default App
+export default App;

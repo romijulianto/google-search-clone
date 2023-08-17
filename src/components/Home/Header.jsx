@@ -1,17 +1,40 @@
-import { Avatar } from "@nextui-org/react";
+import {
+  Avatar,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@nextui-org/react";
+import GoogleApp from "../Others/GoogleApp";
 
 function Header() {
   return (
     <header className="flex justify-between w-full p-3 text-xs text-white">
       <div className="flex items-center gap-4">
-        <div>About</div>
-        <div>Store</div>
+        <a className="hover:cursor-pointer hover:underline" href="/about">
+          About
+        </a>
+        <a className="hover:cursor-pointer hover:underline" href="/store">
+          Store
+        </a>
       </div>
       <div className="flex items-center gap-4">
-        <div>Gmail</div>
-        <div className="mr-6">Images</div>
+        <a className="hover:cursor-pointer hover:underline" href="/gmail">
+          Gmail
+        </a>
+        <a className="mr-6 hover:cursor-pointer hover:underline" href="/images">
+          Images
+        </a>
         <div className="flex items-center gap-4 mr-2">
-          <img src="/icons/g-burger-menu.svg" alt="menu"></img>
+          <div className="items-center">
+            <Popover placement="bottom" color="foreground">
+              <PopoverTrigger>
+                <img src="/icons/g-burger-menu.svg" alt="menu"></img>
+              </PopoverTrigger>
+              <PopoverContent>
+                <GoogleApp />
+              </PopoverContent>
+            </Popover>
+          </div>
           <div className="ml-2">
             <Avatar src="/images/avatar.jpg" size="sm"></Avatar>
           </div>

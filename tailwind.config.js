@@ -65,7 +65,8 @@ module.exports = {
             primary: {
               DEFAULT: "#BEF264",
               foreground: "#000000",
-            }
+            },
+            secondary: "#171717"
           }
         },
         dark: {
@@ -88,7 +89,8 @@ module.exports = {
             primary: {
               DEFAULT: "#BEF264",
               foreground: "#000000",
-            }
+            },
+            secondary: "#171717"
           }
         },
       },

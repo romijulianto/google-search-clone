@@ -1,10 +1,12 @@
 import {
   Avatar,
+  Dropdown,
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@nextui-org/react";
-import GoogleApp from "../Others/GoogleApp";
+import GoogleApp from "../other/GoogleApp";
+import Profile from "../other/Profile";
 
 function Header() {
   return (
@@ -26,17 +28,24 @@ function Header() {
         </a>
         <div className="flex items-center gap-4 mr-2">
           <div className="items-center">
-            <Popover placement="bottom" color="foreground">
+            <Popover placement="bottom" color="primary">
               <PopoverTrigger>
                 <img src="/icons/g-burger-menu.svg" alt="menu"></img>
               </PopoverTrigger>
-              <PopoverContent>
+              <PopoverContent className="p-0">
                 <GoogleApp />
               </PopoverContent>
             </Popover>
           </div>
           <div className="ml-2">
-            <Avatar src="/images/avatar.jpg" size="sm"></Avatar>
+            <Popover placement="bottom" color="primary">
+              <PopoverTrigger>
+                <Avatar src="/images/avatar.jpg" size="sm"></Avatar>
+              </PopoverTrigger>
+              <PopoverContent className="p-0">
+                <Profile />
+              </PopoverContent>
+            </Popover>
           </div>
         </div>
       </div>

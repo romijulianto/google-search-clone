@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home/Home";
+import Home from "./pages/home/index";
+import Search from "./pages/search/index";
 import { NextUIProvider } from "@nextui-org/react";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" exact element={<Home />} />
+            <Route path="search" exact element={<Search />} />
           </Routes>
         </BrowserRouter>
       </main>

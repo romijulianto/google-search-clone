@@ -1,44 +1,38 @@
-import { Button, Input } from "@nextui-org/react";
-import Header from "./Header";
-import Footer from "./Footer";
-import Banner from "./Banner";
+import {
+  Button,
+  Input,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@nextui-org/react";
+import Header from "../../components/home/Header";
+import Footer from "../../components/home/Footer";
 import { SearchIcon } from "../../common/icons/SearchIcon";
 import { SearchImageIcon } from "../../common/icons/SearchImageIcon";
+import ModalSearchInput from "../../components/home/ModalSearchInput";
 
 const Home = () => {
   return (
     <div className="flex h-[100vh] flex-col" color="background">
       <Header />
-      <Banner />
       <div className="flex items-center justify-center h-[65vh]">
         <div id="search-input">
           <div className="flex items-center justify-center mb-6">
             <img
               className="text-center"
-              src="/public/images/google-logo.png"
+              src="/images/google-logo.png"
               alt="Google"
             />
           </div>
           <div className="flex flex-wrap w-full gap-4 mb-8 md:flex-nowrap">
-            <Input
-              variant="faded"
-              radius="full"
-              className="w-[37rem]"
-              size="lg"
-              startContent={
-                <SearchIcon className="flex-shrink-0 text-2xl pointer-events-none text-default-400" />
-              }
-              endContent={
-                <SearchImageIcon className="flex-shrink-0 text-2xl pointer-events-none text-default-400" />
-              }
-            ></Input>
+            <ModalSearchInput />
           </div>
           <div className="flex items-center justify-center">
             <div className="flex gap-4">
-              <Button type="foreground" size="sm" radius="none">
+              <Button type="foreground" size="sm" radius="sm">
                 Google Search
               </Button>
-              <Button type="foreground" size="sm" radius="none">
+              <Button type="foreground" size="sm" radius="sm">
                 I'm Feeling Lucky
               </Button>
             </div>

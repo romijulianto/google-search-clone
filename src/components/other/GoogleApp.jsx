@@ -3,12 +3,12 @@ import React from "react";
 
 const GoogleApp = () => {
   return (
-    <div className="overflow-auto text-xs text-center text-white rounded-md touch-auto">
+    <div className="m-2 p-1 overflow-auto text-xs text-center text-white bg-[#1B1B1B] rounded-lg touch-auto">
       <div className="px-4 py-6 mx-4 my-6">
         <div className="flex gap-8 mb-6">
           <div>
             <Avatar src="/images/avatar.jpg" className="w-12 h-11"></Avatar>
-            <div className="mt-2">Account</div>
+            <div className="mt-2 text-center">Account</div>
           </div>
           <div>
             <img
@@ -16,8 +16,9 @@ const GoogleApp = () => {
               alt="Google Logo"
               width="45rem"
               height="45rem"
+              className="items-center"
             ></img>
-            <div className="mt-2">Search</div>
+            <div className="mt-2 text-center">Search</div>
           </div>
           <div>
             <img
@@ -25,8 +26,9 @@ const GoogleApp = () => {
               alt="Google Calender"
               width="45rem"
               height="45rem"
+              className="items-center"
             ></img>
-            <div className="mt-2">Calender</div>
+            <div className="mt-2 text-center">Calender</div>
           </div>
         </div>
         <div className="flex gap-8 mb-6">
@@ -36,8 +38,9 @@ const GoogleApp = () => {
               alt="Google Drive"
               width="45rem"
               height="45rem"
+              className="items-center"
             ></img>
-            <div className="mt-2">Drive</div>
+            <div className="mt-2 text-center">Drive</div>
           </div>
           <div>
             <img
@@ -45,8 +48,9 @@ const GoogleApp = () => {
               alt="Google Maps"
               width="45rem"
               height="45rem"
+              className="items-center"
             ></img>
-            <div className="mt-2">Maps</div>
+            <div className="mt-2 text-center">Maps</div>
           </div>
           <div>
             <img
@@ -54,8 +58,9 @@ const GoogleApp = () => {
               alt="Google Mail"
               width="45rem"
               height="45rem"
+              className="items-center"
             ></img>
-            <div className="mt-2">Mail</div>
+            <div className="mt-2 text-center">Mail</div>
           </div>
         </div>
         <div className="flex gap-8 mb-6">
@@ -65,8 +70,9 @@ const GoogleApp = () => {
               alt="Youtube"
               width="45rem"
               height="45rem"
+              className="items-center"
             ></img>
-            <div className="mt-2">Youtube</div>
+            <div className="mt-2 text-center">Youtube</div>
           </div>
           <div>
             <img
@@ -74,8 +80,9 @@ const GoogleApp = () => {
               alt="Google Chat"
               width="45rem"
               height="45rem"
+              className="items-center"
             ></img>
-            <div className="mt-2">Chat</div>
+            <div className="mt-2 text-center">Chat</div>
           </div>
           <div>
             <img
@@ -83,8 +90,9 @@ const GoogleApp = () => {
               alt="Google Contact"
               width="45rem"
               height="45rem"
+              className="items-center"
             ></img>
-            <div className="mt-2">Contact</div>
+            <div className="mt-2 text-center">Contact</div>
           </div>
         </div>
         <div className="flex gap-8">
@@ -94,8 +102,9 @@ const GoogleApp = () => {
               alt="Google Sheets"
               width="45rem"
               height="45rem"
+              className="items-center"
             ></img>
-            <div className="mt-2">Sheet</div>
+            <div className="mt-2 text-center">Sheet</div>
           </div>
           <div>
             <img
@@ -103,8 +112,9 @@ const GoogleApp = () => {
               alt="Google Classroom"
               width="45rem"
               height="45rem"
+              className="items-center"
             ></img>
-            <div className="mt-2">Classroom</div>
+            <div className="mt-2 text-center">Classroom</div>
           </div>
           <div>
             <img
@@ -112,8 +122,9 @@ const GoogleApp = () => {
               alt="Google Slide"
               width="45rem"
               height="45rem"
+              className="items-center"
             ></img>
-            <div className="mt-2">Slide</div>
+            <div className="mt-2 text-center">Slide</div>
           </div>
         </div>
       </div>

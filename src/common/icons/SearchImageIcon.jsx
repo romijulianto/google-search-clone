@@ -6,9 +6,9 @@ export const SearchImageIcon = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
     focusable="false"
-    height="1em"
+    height="1.7em"
     role="presentation"
-    width="1em"
+    width="1.7em"
     {...props}
   >
     <g clip-path="url(#clip0_101_6468)">

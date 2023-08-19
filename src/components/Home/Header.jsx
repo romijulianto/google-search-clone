@@ -4,6 +4,7 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
+  Tooltip,
 } from "@nextui-org/react";
 import GoogleApp from "../other/GoogleApp";
 import Profile from "../other/Profile";
@@ -30,7 +31,9 @@ function Header() {
           <div className="items-center">
             <Popover placement="bottom" color="primary">
               <PopoverTrigger>
-                <img src="/icons/g-burger-menu.svg" alt="menu"></img>
+                <div className="hover:bg-black hover:cursor-pointer p-2 rounded-full">
+                  <img src="/icons/g-burger-menu.svg" alt="menu"></img>
+                </div>
               </PopoverTrigger>
               <PopoverContent className="p-0">
                 <GoogleApp />

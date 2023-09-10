@@ -6,9 +6,9 @@ export const CloseIcon = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
     focusable="false"
-    height="1em"
+    height="0.7em"
     role="presentation"
-    width="1em"
+    width="0.7em"
     {...props}
   >
     <path

@@ -1,14 +1,6 @@
-import {
-  Button,
-  Input,
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import Header from "../../components/home/Header";
 import Footer from "../../components/home/Footer";
-import { SearchIcon } from "../../common/icons/SearchIcon";
-import { SearchImageIcon } from "../../common/icons/SearchImageIcon";
 import ModalSearchInput from "../../components/home/ModalSearchInput";
 
 const Home = () => {

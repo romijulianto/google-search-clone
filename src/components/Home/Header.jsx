@@ -31,7 +31,7 @@ function Header() {
           <div className="items-center">
             <Popover placement="bottom" color="primary">
               <PopoverTrigger>
-                <div className="hover:bg-black hover:cursor-pointer p-2 rounded-full">
+                <div className="p-2 rounded-full hover:bg-black hover:cursor-pointer">
                   <img src="/icons/g-burger-menu.svg" alt="menu"></img>
                 </div>
               </PopoverTrigger>

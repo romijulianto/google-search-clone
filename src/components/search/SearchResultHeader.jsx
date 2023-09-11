@@ -9,6 +9,7 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
+  ScrollShadow,
 } from "@nextui-org/react";
 import { Context } from "../../services/api/ContextApi";
 import GoogleApp from "../other/GoogleApp";
@@ -109,24 +110,30 @@ const SearchResultHeader = () => {
         </div>
       </div>
 
-      <div className="flex gap-2 mt-3 ml-[9rem]">
-        {menu.map((menu, index) => (
-          <Button
-            radius="full"
-            variant="bordered"
-            key={index}
-            className={`flex items-center p-3 cursor-pointer relative text-white hover:bg-[#303133] ${
-              selectedMenu === menu.name ? "text-[#D5E2FA] bg-[#3B4355]" : ""
-            }`}
-            onClick={() => clickHandler(menu)}
-          >
-            <span className="text-sm">{menu.name}</span>
-            {selectedMenu === menu.name && (
-              <span className="w-[calc(100%-20px)] absolute bg-slate-400 bottom-0 left-[-10px]" />
-            )}
-          </Button>
-        ))}
-      </div>
+      <ScrollShadow
+        orientation="horizontal"
+        className="ml-[9rem] max-w-[70rem] max-h-[300px]"
+        hideScrollBar
+      >
+        <div className="flex gap-2 mt-3">
+          {menu.map((menu, index) => (
+            <Button
+              radius="full"
+              variant="bordered"
+              key={index}
+              className={`flex items-center p-3 cursor-pointer relative text-white hover:bg-[#303133] ${
+                selectedMenu === menu.name ? "text-[#D5E2FA] bg-[#3B4355]" : ""
+              }`}
+              onClick={() => clickHandler(menu)}
+            >
+              <span className="text-sm">{menu.name}</span>
+              {selectedMenu === menu.name && (
+                <span className="w-[calc(100%-20px)] absolute bg-slate-400 bottom-0 left-[-10px]" />
+              )}
+            </Button>
+          ))}
+        </div>
+      </ScrollShadow>
 
       <Divider className="mt-4"></Divider>
     </div>

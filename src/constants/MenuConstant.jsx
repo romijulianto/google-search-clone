@@ -9,6 +9,11 @@ export const menu = [
   { name: "Books" },
   { name: "Flight" },
   { name: "Job" },
+  { name: "Linkedin" },
+  { name: "Youtube" },
+  { name: "Google One" },
+  { name: "Sings" },
+  { name: "Medium" },
 ];
 
 export const quickLinks = [

@@ -22,7 +22,7 @@ const ModalSearchInput = () => {
 
   const searchQueryHandler = (event) => {
     if (event?.key === "Enter" && searchQuery?.length > 0) {
-      navigate(`/${searchQuery}/${1}`);
+      navigate(`/google-search/${searchQuery}/${1}`);
     }
   };
 

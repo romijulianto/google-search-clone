@@ -11,8 +11,8 @@ function App() {
         <main className="dark text-foreground bg-background">
           <BrowserRouter>
             <Routes>
-              <Route path="/" exact element={<Home />} />
-              <Route path="/:query/:startIndex" exact element={<Search />} />
+              <Route path="/google-search" exact element={<Home />} />
+              <Route path="/google-search/:query/:startIndex" exact element={<Search />} />
             </Routes>
           </BrowserRouter>
         </main>
